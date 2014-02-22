@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>IceBreaker</title>
+        <meta name="description" content="">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="cleartype" content="on">
+
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+        <link rel="shortcut icon" href="img/touch/apple-touch-icon.png">
+        
+        
+        <link href="img/startup/startup.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+        <link href="img/startup/startup-retina.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        <link href="img/startup/startup-retina4in.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+        
+
+        <!-- For iOS web apps. Delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
+        
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="">
+        
+        
+        <link rel="stylesheet" type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+        <!--<script src="js/vendor/modernizr-2.6.2.min.js"></script>-->
+           
+    </head>
+    <body class="nobounce">
+        <section id="home">
+            <header>
+            	<div class="headercontainer">
+                    <h1>IceBreaker</h1>
+                </div><!--end headercontainer-->
+            </header>
+            <div class="content">
+                <img id="iconaccueil" src="img/icone_accueil.png" alt="icebreakericon" width="110" height="110" />
+                <nav class="mainmenu">
+               		<ul>
+                        <li><button id="newbutton">Nouvelle partie</button></li>
+                        <li><button id="instrbutton">Instructions</button></li>
+                        <li><button id="credbutton">Crédits</button></li>
+                    </ul>
+                </nav>
+            </div><!--end content-->
+        </section><!--end home-->
+        <section id="instructions">
+            <header>
+                <div class="headercontainer">
+                    <button class="leftonbar backbutton">précédent</button>
+                    <h1>Instructions</h1>
+                </div><!--end headercontainer-->
+            </header>
+            <div class="content current">
+                <h2>Prologue</h2>
+                <p>Vous êtes le capitaine de l’USS
+            Ice-on-Berg, votre mission consiste à
+            briser toute la banquise dans le temps
+            imparti en évitant les pingouins, mammouths et icebergs.
+
+            Vous êtes très limité en carburant, vous
+            avez donc ordre de ne pas repasser
+            dans les secteurs où vous avez déjà
+            brisé la glace.</p>
+            </div><!--end content-->
+            <div class="content right">
+                <h2>Règles</h2>
+                <ul class="pagelist">
+                    <li>Vous avez X secondes pour nettoyer une zone.</li>
+                    <li>Dirigez le brise-glace en balayant dans la direction désirée.</li>
+                    <li>Votre navire s'arrête au contact d’un obstacle.</li>
+                    <li>Votre navire s'arrête si vous tentez de revenir en arrière.</li>
+                </ul>
+            </div><!--end content-->
+            <nav class="indicateurslide">
+                <ul>
+                    <li class="selected"><button id="indicprologue">indic1</button></li>
+                    <li><button id="indicinstr">indic2</button></li>
+                </ul>
+            </nav>
+        </section><!--end instructions-->
+        <section id="team">
+            <header>
+                <div class="headercontainer">
+                    <button class="leftonbar backbutton">précédent</button>
+                    <h1>Crédits</h1>
+                </div><!--end headercontainer-->
+            </header>
+            <div class="content current">
+                <h2>L'équipe</h2>
+                <ul class="pagelist">
+                    <li>Christina Di Marco</li>
+                    <li>Maxime-Emilien Hubert</li>
+                    <li>Morgane Keyser</li>
+                    <li>Gordon Lambot</li>
+                </ul>
+            </div><!--end content-->
+            <div class="content right">
+                <h2>Ressources utilisées</h2>
+                <ul class="pagelist">
+                    <li>Boiler plate</li>
+                    <li>Fastclick.js</li>
+                    <li>Bouncefix.js</li>
+                </ul>
+            </div><!--end content-->
+            <nav class="indicateurslide">
+                <ul>
+                    <li class="selected"><button id="indicteam" >indic1</button></li>
+                    <li><button id="indicress">indic2</button></li>
+                </ul>
+            </nav>
+        </section><!--end team-->
+        <section id="gamesection">
+            <header id="headergame">
+                <div class="headercontainer">
+                    <button class="leftonbar" id="retrybutton">retry</button>
+                    <button class="rightonbar" id="pausebutton">pause</button>
+                    <h1 id="timer">00:00:00</h1>
+                </div><!--end headercontainer-->
+            </header>
+            <div id="rotatewarning"><!--GORDON COPIE A PARTIR DE LA-->
+                <img src="img/rocketboat.png" alt="this is not a rocket boat" width="150" height="150"/>
+                <p>Pour le respect des lois
+de la physique, veuillez mettre votre smartphone en mode portrait.</p>
+            </div><!--end rotatewarning-->
+            <div id="contentgame">
+                <div id="pausemenu">
+                    <h2 id="zone">Zone 1</h2>
+                    <nav class="mainmenu">
+                        <ul>
+                            <li><button id="pauseinstrbutton">Instructions</button></li>
+                            <li><button id="quitbutton">Quitter</button></li>
+                        </ul>
+                    </nav>
+                    <div id="pauseinstructions">
+                        <h2>Règles</h2>
+                        <ul class="pagelist">
+                            <li>Vous avez X secondes pour nettoyer une zone.</li>
+                            <li>Dirigez le brise-glace en balayant dans la direction désirée.</li>
+                            <li>Votre navire s'arrête au contact d’un obstacle.</li>
+                            <li>Votre navire s'arrête si vous tentez de revenir en arrière.</li>
+                        </ul>
+                    </div>
+                </div><!--pausemenu-->
+                <div id="victorymenu">
+                    <span>Icone de victoire</span>
+                    <p>Beau boulot matelot !</p>
+                    <button class="retrybuttoninmenu">Recommencer</button>
+                    <button class="nextbuttoninmenu">Zone suivante</button>
+                </div><!--victorymenu-->
+                <div id="loosemenu">
+                    <span>Icone de defaite</span>
+                    <p>Temps écoulé !</p>
+                    <button class="retrybuttoninmenu">Recommencer</button>
+                    <button class="nextbuttoninmenu">Quitter</button>
+                </div><!--loosemenu-->
+                <div id="game">
+                    <audio id="bgmusic">
+                        <source src="sound/bgmusic.ogg" type="audio/ogg">
+                        <source src="sound/bgmusic.mp3" type="audio/mpeg">
+                        Your browser does not support the audio tag.
+                    </audio>
+                </div><!-- game -->
+            </div><!--end content-->
+        </section><!--end gamesection-->
+
+        <script src="js/vendor/zepto.min.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/fastclick.js"></script>
+        <script src="js/bouncefix.js"></script>
+        <script src="js/script.js"></script>
+		
+    </body>
+</html>

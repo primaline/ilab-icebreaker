@@ -1,0 +1,362 @@
+body, html {
+	height: 100%;
+	width: 100%;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+/* __________________HEADER__________________ */
+
+.navbar-default {
+background-color: #FFF;
+border-color: #FFF;
+} 
+.navbar-default .navbar-brand {
+background: url('../img/logo-icebreaker.png');
+width: 153px;
+height: 40px;
+margin-top: 5px;
+}
+.navbar-default .navbar-nav > li > a {
+color: #333;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #3BAED9;
+background-color: transparent;
+}
+.navbar-nav > li > a.selected {
+color: #3BAED9;
+}
+.btn-appstore:hover, .btn-appstore:focus, .btn-appstore:active, .btn-appstore.active, .open .dropdown-toggle.btn-appstore {
+display:block;
+width:164px;
+height:58px;
+background:url('../img/app-btn.png') 0 -58px no-repeat;
+}
+.btn-youtube:hover, .btn-youtube:focus, .btn-youtube:active, .btn-youtube.active, .open .dropdown-toggle.btn-youtube {
+display: block;
+width: 164px;
+height: 58px;
+background: url('../img/video-btn.png') 0 -58px no-repeat;
+}
+.gif-jeu {
+	position: absolute;
+	top: 207px;
+	left: 29px;
+}
+.iphone {
+display: inline-block;
+margin-top: 130px;
+float: left;
+}
+.intro-message {
+	padding-top: 34%;
+	padding-bottom: 34%;
+	text-align: left;
+	color: #333;
+	padding-left: 49%;
+}
+
+.intro-message > h1 {
+	margin: 0;
+	font-size: 5em;
+}
+
+.intro-divider {
+width: 368px;
+border-top: 1px solid #333;
+float: left;
+}
+.list-inline > li {
+padding-right: 0px;
+padding-left: 0px;
+}
+
+/* __________________CONTENT__________________ */
+
+
+.lead {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.presentation {
+	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	padding-bottom: 100px;
+	color: #f8f8f8;
+	background: #EEE;
+	background-size: cover;
+	text-align: center;
+}
+ul.plan {
+	font-size: 18px;
+	font-weight: 400;
+}
+ul.plan li {
+	line-height: 1.4;
+	margin-top: 20px;
+}
+h4 {
+	font-size: 20px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
+
+.btn-appstore {
+	display:block;
+  	width:164px;
+  	height:58px;
+  	background:url('../img/app-btn.png') 0 0 no-repeat;
+  	background-color: transparent;
+  	border: none;
+  	margin-right: 38px;
+}
+.btn-youtube {
+	display: block;
+	width: 164px;
+	height: 58px;
+	background: url('../img/video-btn.png') 0 0 no-repeat;
+	background-color: transparent;
+	border: none;
+}
+.consignes{
+	background-color: #f8f8f8;
+	padding: 80px 0;
+}
+.consignes img {
+	margin-top: 140px;
+}
+.installation {
+background-color: #fff;
+}
+h2.step, h2.step1 {
+padding-top: 80px;
+}
+img.insta1 {
+	padding-top: 20px;
+}
+img.insta2 {
+	padding-top: 45px;
+}
+img.insta3 {
+	padding-top: 44px;
+}
+img.insta4 {
+	padding-top: 70px;
+}
+.installation img {
+	margin-bottom: 100px;
+	margin-top: 20px;
+}
+.plans {
+	background-color: #f8f8f8;
+	padding: 80px 0;
+}
+.avis {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 80px 0;
+}
+
+.section-heading-spacer {
+border-top: 1px solid #EEE;
+width: 100%;
+}
+.space-equipe {
+	margin-bottom: 50px;
+}
+.equipe {
+	padding: 80px 0;
+	color: #f8f8f8;
+	background:#3BAED9;
+	background-size: cover;
+}
+.equipe a {
+	color: #FFF;
+}
+.equipe a:hover {
+	color: #FFF;
+}
+
+.equipe ul {
+	margin-bottom: 0;
+}
+.hublot {
+	position: absolute;
+	top: -28px;
+	left: -15px;
+}
+/* __________________FOOTER__________________ */
+
+.credits {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+}
+.credits a {
+color: #333;
+}
+.credits a:hover, a:focus {
+color: #3BAED9;
+text-decoration: none;
+}
+footer {
+	background-color: #FFF;
+}
+footer ul.list-inline > li {
+	padding: 0px 7px;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+p.copyright {
+margin: 20px 0 0;
+float: right;
+}
+.list-inline {
+list-style: none;
+float: left;
+margin-top: 10px;
+}
+
+.list-inline li a {
+	color: #333;
+	font-size: 14px;
+}
+.list-inline li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #3BAED9;
+background-color: transparent;
+}
+
+
+/* __________________MEDIA-QUERRIES__________________ */
+
+@media (max-width: 767px) {
+
+	.navbar-default .navbar-brand {
+		margin-left: 15px;
+	}
+	.intro-message {
+		left: 0;
+		margin-left: 32px;
+	}
+	.intro-message > h1 {
+		font-size: 3em;
+	}
+
+	ul.intro-social-buttons > li {
+		display: block;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+
+	ul.intro-social-buttons > li:last-child {
+		margin-bottom: 0;
+	}
+
+	.intro-divider {
+		width: 100%;
+	}
+	footer ul {
+		margin: 0 auto;
+	}
+	footer ul.list-inline > li {
+		padding: 0px 7px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.list-inline li a {
+		font-size: 14px;
+	}
+	p.copyright {
+		margin: 20px 0 20px 12px;
+		float: left;
+		font-size: 12px;
+	}
+	.intro-message {
+		left: 0;
+		padding-left: 0;
+	}
+	.list-inline {
+		padding-left: none;
+		list-style: none;
+	}
+	.iphone {
+		margin-bottom: 50px;
+	}
+	.colonne {
+		margin-left: 40px;
+		margin-bottom: 80px;
+	}
+	.colonne:last-child {
+		margin-bottom: 0px;
+	}
+	h2.step1 {
+		padding-top: 80px;
+	}
+	h2.step {
+		padding-top: 0px;
+	}
+	.lead {
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+	ul.plan li {
+		margin-top: 30px;
+	}
+	.installation img {
+		margin-bottom: 60px;
+	}
+	.consignes img {
+	margin-top: 0;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+	.colonne {
+		margin-left: 38%;
+		margin-bottom: 80px;
+	}
+	.installation img {
+		margin-bottom: 60px;
+	}
+
+}
+
+@media (max-width: 1200px) {
+
+	.hublot {
+		top: -31px;
+	}
+	h2.step1 {
+		padding-top: 80px;
+	}
+	h2.step {
+		padding-top: 0px;
+	}
+	.lead {
+		margin-top: 30px;
+		margin-bottom: 60px;
+	}
+	ul.plan li {
+		margin-top: 30px;
+	}
+	img.insta1 {
+	padding-top: 0;
+	}
+	img.insta2 {
+		padding-top: 0;
+	}
+	img.insta3 {
+		padding-top: 0;
+	}
+	img.insta4 {
+		padding-top: 0;
+	}
+}
+
+
+
+
